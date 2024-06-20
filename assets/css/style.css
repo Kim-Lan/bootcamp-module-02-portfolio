@@ -7,6 +7,7 @@ body {
   font-family: Verdana, sans-serif;
 }
 
+/** Header */
 header {
   background-color: #9bcdff;
   color: white;
@@ -23,6 +24,7 @@ header h1 {
   filter: drop-shadow(1px 1px 0px  #519fec);
 }
 
+/** Nav */
 nav a {
   text-decoration: none;
   color: white;
@@ -43,11 +45,17 @@ nav ul li {
   display: inline;
 }
 
+/** Main */
 main {
-  /* padding: 50px 150px; */
   width: 80%;
   margin: 25px auto;
-  color: rgb(48, 48, 48);
+  color: #303030;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    width: 90%;
+  }
 }
 
 main h2 {
@@ -71,18 +79,22 @@ main section h2 {
   border-right: 2px solid #519fec;
 }
 
+/** About */
 #about-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
+  padding: 5px 0;
 }
 
+/** Projects */
 #project-card-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
+  padding: 5px 0;
 }
 
 #other-projects {
@@ -96,6 +108,7 @@ main section h2 {
   align-items: center;
   background-color: #9bcdff;
   padding: 5px;
+  width: 100%;
 }
 
 .project-card a {
@@ -104,9 +117,34 @@ main section h2 {
 
 .project-card h3 {
   color: white;
+  filter: drop-shadow(1px 1px 0px  #519fec);
   padding: 0 0 5px 5px;
+}
+
+.project-card img {
+  width: 100%;
 }
 
 .project-card img:hover {
   opacity: 0.6;
+}
+
+/** Contact */
+#contact-container {
+  display: flex;
+  align-items: center;
+}
+
+#contact-container li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 15px;
+}
+
+#contact-container a {
+  color: #303030;
+}
+
+#contact-container a:hover {
+  color: #519fec;
 }
