@@ -71,6 +71,13 @@ main section h2 {
   border-right: 2px solid #519fec;
 }
 
+#about-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 #project-card-container {
   display: flex;
   flex-direction: column;
