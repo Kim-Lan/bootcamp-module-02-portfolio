@@ -2,3 +2,45 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+header {
+  background-color: #9bcdff;
+  color: white;
+  border-bottom: 5px solid #519fec;
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  filter: drop-shadow(1px 1px 0px  #519fec);
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  filter: drop-shadow(1px 1px 0px  #519fec);
+}
+
+nav a:hover {
+  color: #519fec;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+main h2 {
+  color: #519fec;
+}
