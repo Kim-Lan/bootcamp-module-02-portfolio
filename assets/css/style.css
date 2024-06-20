@@ -41,6 +41,16 @@ nav ul li {
   display: inline;
 }
 
+main {
+  padding: 20px 30px;
+  color: rgb(48, 48, 48);
+}
+
 main h2 {
   color: #519fec;
+  margin-bottom: 5px;
+}
+
+section {
+  margin-bottom: 20px;
 }
