@@ -52,12 +52,6 @@ main {
   color: #303030;
 }
 
-@media only screen and (max-width: 600px) {
-  main {
-    width: 90%;
-  }
-}
-
 main h2 {
   color: #519fec;
   margin-bottom: 5px;
@@ -147,4 +141,11 @@ main section h2 {
 
 #contact-container a:hover {
   color: #519fec;
+}
+
+/** Media Queries*/
+@media only screen and (max-width: 768px) {
+  main {
+    width: 90%;
+  }
 }
