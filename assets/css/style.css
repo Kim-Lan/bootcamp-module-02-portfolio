@@ -47,7 +47,7 @@ nav ul li {
 
 /** Main */
 main {
-  width: 80%;
+  width: fit-content;
   margin: 25px auto;
   color: #303030;
 }
@@ -63,11 +63,11 @@ main section {
 
 main section {
  display: flex;
- flex-wrap: wrap;
  gap: 25px;
 }
 
 main section h2 {
+  flex-shrink: 0;
   width: 100px;
   padding-right: 25px;
   border-right: 2px solid #519fec;
@@ -77,9 +77,9 @@ main section h2 {
 #about-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 10px;
   padding: 5px 0;
+  max-width: 800px;
 }
 
 /** Projects */
@@ -88,7 +88,8 @@ main section h2 {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
-  padding: 5px 0;
+  padding: 5px;
+  max-width: 800px;
 }
 
 #other-projects {
@@ -144,8 +145,26 @@ main section h2 {
 }
 
 /** Media Queries*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   main {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main section {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  main section h2 {
+    border-right: 0;
+    border-bottom: 2px solid #519fec;
+    padding-bottom: 5px;
+  }
+
+  #other-projects {
+    flex-direction: column;
+    width: 100%;
   }
 }
